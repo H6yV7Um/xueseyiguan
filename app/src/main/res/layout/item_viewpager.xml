@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/bg"
+        android:src="@drawable/item04" />
+
+    <RelativeLayout
+        android:id="@+id/sanwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_tongshuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="统帅：" />
+
+        <TextView
+            android:id="@+id/tongshuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/label_tongshuai"
+            android:layout_toRightOf="@+id/label_tongshuai"
+            android:text="113" />
+
+        <TextView
+            android:id="@+id/label_wuli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_tongshuai"
+            android:layout_margin="2dp"
+            android:text="武力：" />
+
+        <TextView
+            android:id="@+id/wuli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/label_wuli"
+            android:layout_toRightOf="@+id/label_wuli"
+            android:text="83" />
+
+        <TextView
+            android:id="@+id/label_zhili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_wuli"
+            android:layout_margin="2dp"
+            android:text="智力：" />
+
+        <TextView
+            android:id="@+id/zhili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/label_zhili"
+            android:layout_toRightOf="@+id/label_zhili"
+            android:text="85" />
+
+        <TextView
+            android:id="@+id/label_zhengzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_zhili"
+            android:layout_margin="2dp"
+            android:text="政治：" />
+
+        <TextView
+            android:id="@+id/zhengzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/label_zhengzhi"
+            android:layout_toRightOf="@+id/label_zhengzhi"
+            android:text="22" />
+
+        <TextView
+            android:id="@+id/label_meili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_zhengzhi"
+            android:layout_margin="2dp"
+            android:text="魅力：" />
+
+        <TextView
+            android:id="@+id/meili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/label_meili"
+            android:layout_toRightOf="@+id/label_meili"
+            android:text="43" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/sanwei"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/qiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="枪兵：圣" />
+
+        <TextView
+            android:id="@+id/ji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="戟兵：极" />
+
+        <TextView
+            android:id="@+id/nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="弩兵：神" />
+
+        <TextView
+            android:id="@+id/qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="骑兵：精" />
+
+        <TextView
+            android:id="@+id/bing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="兵器：极" />
+
+        <TextView
+            android:id="@+id/shui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="水军：熟" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:text="白起" />
+
+    <TextView
+        android:id="@+id/teji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_margin="10dp"
+        android:text="特技:战神" />
+
+
+    <TextView
+        android:id="@+id/liezhuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teji"
+        android:layout_margin="10dp"
+        android:text="战国时期秦国名将。(前??～前258)\n[史]行伍出身，秦昭襄王时受魏冉推荐而为将。伊阙之战大败韩、魏联军，斩首二十四万。之後三次攻楚，破其国都，共歼敌三十五万。长平之战，坑杀赵军四十余万。白起一生历经大小七十余战，无一败绩，歼灭六国军队一百六十五万之多，是战国时期战功最突出的统帅，因功封武安君。长平之战後，遭到当政范雎的猜忌，心怀怨恨，称病不起，导致秦军久攻邯郸不下，被降为普通士兵，贬出咸阳，继而追赐宝剑，自刎而死。战国四名将之一。" />
+</RelativeLayout>
